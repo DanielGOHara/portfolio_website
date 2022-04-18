@@ -11,12 +11,11 @@ import Contact from "./components/Contact";
 export default function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
-      <p1>hello</p1>
         <Navbar />
-        <About />
         <Projects />
         <Skills />
         <Contact />
+        <About />
     </main>
   );
 }
