@@ -4,7 +4,7 @@ import React from "react";
 export default function Projects() {
     return (
         <section id="projects">
-            <p1>Projects</p1>
+            <button className="pageButton">Projects</button>
         </section>
     );
 }

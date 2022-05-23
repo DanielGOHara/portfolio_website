@@ -1,9 +1,11 @@
 
+import "../index.css"
 import React from "react";
+
 export default function About() {
     return (
-        <section id="about">
-            <p1>About</p1>
+        <section>
+            <button className="pageButton">About</button>
         </section>
     );
 }   
