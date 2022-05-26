@@ -1,5 +1,6 @@
 
 import React from "react";
+import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -8,10 +9,11 @@ import Contact from "./Contact";
 export default function Navbar() {
     return (
       <section id="navBar">
-          <Projects />
-          <Skills />
-          <Contact />
-          <About />
+          <Home/>
+          <Projects/>
+          <Skills/>
+          <Contact/>
+          <About/>
       </section>
       );
 }
