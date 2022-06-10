@@ -1,19 +1,18 @@
 
 import React from "react";
-import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import Contact from "./Contact";
-//import { ArrowRightIcon } from "@heroicons/react/solid";
+import Home from "./navBar_components/Home.js";
+import About from "./navBar_components/About.js";
+import Projects from "./navBar_components/Projects.js";
+import Skills from "./navBar_components/Skills.js";
+import Contact from "./navBar_components/Contact.js";
 export default function Navbar() {
     return (
       <section id="navBar">
           <Home/>
           <Projects/>
           <Skills/>
-          <Contact/>
           <About/>
+          <Contact/>
       </section>
       );
 }
