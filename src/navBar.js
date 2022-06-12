@@ -1,6 +1,7 @@
 
 import React from "react";
 import Logo from "./components/media/logo.png"
+import Line from "./components/navBar_components/Line.js";
 import Home from "./components/navBar_components/Home.js";
 import About from "./components/navBar_components/About.js";
 import Projects from "./components/navBar_components/Projects.js";
@@ -14,9 +15,13 @@ export default function Navbar() {
               <span id="pageStatement">Site Developed By Me.</span>
           </section>
           <Home/>
+          <Line/>
           <Projects/>
+          <Line/>
           <Skills/>
+          <Line/>
           <About/>
+          <Line/>
           <Contact/>
       </nav>
       );

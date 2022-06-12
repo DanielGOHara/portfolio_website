@@ -54,13 +54,18 @@
 
     padding: 10px 15px;
 
-    text-align: center;
-    justify-content: center;
-    vertical-align: middle;
+    align-items: center;
     
     font-family: "Abel"; font-size: 22px;
     display: flex;
     background-color: white;
+  }
+
+  .line {
+    height: 50px;
+    width: 0.5px;
+
+    background-color: black;
   }
 
   .buttonContainer {
@@ -76,7 +81,7 @@
   
   .btn {
     line-height: 50px;
-    width: 130px;
+    width: 75%;
 
     text-align: center;
     

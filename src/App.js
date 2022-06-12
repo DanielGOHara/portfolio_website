@@ -7,7 +7,7 @@ import InfoSection from "./infoSection.js"
  
 export default function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font w-96">
+    <main>
         <Navbar/>
         <InfoSection/>
     </main>
