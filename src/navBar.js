@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
       <nav id="navBar">
           <section id="logoStatementContainer">
-              <img id="pageLogo" alt ="Logo" src="./components/media/logo.jpg" height="85px" width="85px"/>
+              <img id="pageLogo" alt ="Logo" src="localhost:3000/src/components/media/logo.jpg" height="85px" width="85px"/>
               <span id="pageStatement">Site Developed By Me.</span>
           </section>
           <Home/>
