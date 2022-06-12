@@ -1,5 +1,6 @@
 
 /* Desktop's & Laptop's */
+
 @media only screen
   and (min-width: 900px) {
 
@@ -31,11 +32,27 @@
 
   /* <----------> Navigation Bar <----------> */
 
-  #navBar {
-    height: 35px;
-    width: 100%;
+  #logoStatementContainer {
+    height: 100%;
+    width: 75px;
 
-    padding: 20px 0px;
+    text-align: center;
+  }
+
+  #pageLogo {
+    cursor: default;
+  }
+
+  #pageStatement {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:0.15cm;
+  }
+
+  #navBar {
+    height: 100px;
+    width: 97.5%;
+
+    padding: 10px 15px;
 
     text-align: center;
     justify-content: center;
@@ -47,20 +64,19 @@
   }
 
   .buttonContainer {
-    height: 30%;
-    width: 15%; 
-
-    padding: 10px;
+    height: 100%;
+    width: 20%; 
 
     justify-content: center;
     align-items: center;
+    vertical-align: middle;
 
     display: flex;
   }
   
   .btn {
     line-height: 50px;
-    width: 150px;
+    width: 130px;
 
     text-align: center;
     
