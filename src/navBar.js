@@ -1,12 +1,12 @@
 
 import React from "react";
 import Logo from "./components/media/logo.png"
-import Line from "./components/navBar_components/Line.js";
-import Home from "./components/navBar_components/Home.js";
-import About from "./components/navBar_components/About.js";
-import Projects from "./components/navBar_components/Projects.js";
-import Skills from "./components/navBar_components/Skills.js";
-import Contact from "./components/navBar_components/Contact.js";
+import Line from "./components/navBar_components/line.js";
+import Home from "./components/navBar_components/homeButton.js";
+import About from "./components/navBar_components/aboutButton.js";
+import Projects from "./components/navBar_components/projectsButton.js";
+import Skills from "./components/navBar_components/skillsButton.js";
+import Contact from "./components/navBar_components/contactButton.js";
 export default function Navbar() {
     return (
       <nav id="navBar">
