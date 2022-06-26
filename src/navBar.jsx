@@ -19,7 +19,7 @@ export default class Navbar extends React.Component {
                 <img id="pageLogo" alt ="Logo" src={Logo} height="75px" width="75px"/>
                 <span id="pageStatement">Site Developed By Me.</span>
             </section>
-            <Home/>
+            <Home onClick={() => alert("Home")}/>
             <Line/>
             <Projects/>
             <Line/>
