@@ -1,6 +1,6 @@
 
 import React from "react";
-//import { Link, browserHistory } from 'react-router'
+import { Link, browserHistory } from 'react-router'
 import Logo from "./components/media/logo.png"
 import Line from "./components/navBar_components/line.js";
 import Home from "./components/navBar_components/homeButton.js";
