@@ -2,8 +2,8 @@
 // Import Necessary Components for the Navigation Bar
 
 import React from "react";
-import Navbar from "./navBar.js";
-import InfoSection from "./infoSection.js"
+import Navbar from "./navBar.jsx";
+import InfoSection from "./infoSection.jsx"
  
 export default function App() {
   return (
