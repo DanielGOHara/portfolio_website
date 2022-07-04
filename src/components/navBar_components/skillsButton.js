@@ -1,6 +1,6 @@
 
 import React from "react";
-import { setInfo } from "../../infoSection";
+import { setInfo } from "../../infoSection.jsx";
 
 export default function Skills() {
     return (
