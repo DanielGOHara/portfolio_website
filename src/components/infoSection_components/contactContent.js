@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ContactContents() {
     return (
-        <span>
+        <span className="contents">
             Contact Contents...
         </span>
     );

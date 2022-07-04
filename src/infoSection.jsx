@@ -1,44 +1,73 @@
 
 import React from "react";
 import './index.css';
-import About from "./components/infoSection_components/aboutContent.js";
-import Contact from "./components/infoSection_components/contactContent.js";
 import Home from "./components/infoSection_components/homeContent.js";
 import Projects from "./components/infoSection_components/projectsContent.js";
 import Skills from "./components/infoSection_components/skillsContent.js";
-
-const elementStyle = {
-  visibility: 'hidden',
-  height: '0px',
-  width: '0px'
-};
+import About from "./components/infoSection_components/aboutContent.js";
+import Contact from "./components/infoSection_components/contactContent.js";
 
 let currentSection = "home";
-let sectionElement = document.getElementById({currentSection} + "Section");
+let updatedSection = "home";
+let updated = false;
 
 export default class InfoSection extends React.Component {
-
-  componentDidMount() {
-    //document.getElementById(sectionElement).style.visibility = '';
+  constructor(props) {
+    super(props);
+    this.state = {
+      CurrentSection: Home
+    }
   }
 
-  updateSection(section) {
+  componentDidMount() {
+    this.timer();
+  }
 
+  timer() {
+    setInterval(() => this.checkSelection(), 5);
+  }
+
+  checkSelection() {
+    if (updatedSection !== currentSection && updated === true) {
+      switch(updatedSection) {
+        case "home":
+          this.setState({CurrentSection: Home});
+          console.log("Home");
+          break;
+        case "projects":
+          this.setState({CurrentSection: Projects});
+          console.log("Projects");
+          break;
+        case "skills":
+          this.setState({CurrentSection: Skills});
+          console.log("Skills");
+          break;
+        case "about":
+          this.setState({CurrentSection: About});
+          console.log("About");
+          break;
+        case "contact":
+          this.setState({CurrentSection: Contact});
+          console.log("Contact");
+          break;
+        default:
+          break;
+      };
+      updated = false;
+      currentSection = updatedSection;
+    }
   }
 
   render() {
     return (
       <section id="infoSection">
-        <div id="homeSection" style={elementStyle}><Home/></div>
-        <div id="projectsSection" style={elementStyle}><Projects/></div>
-        <div id="skillsSection" style={elementStyle}><Skills/></div>
-        <div id="aboutSection" style={elementStyle}><About/></div>
-        <div id="contactSection" style={elementStyle}><Contact/></div>
+        <div id="currentSection"><this.state.CurrentSection/></div>
       </section>
     );
   }
 }
 
 export const setInfo = (buttonResponse) => {
-  alert(buttonResponse);
+  updatedSection = buttonResponse;
+  updated = true;
 }
