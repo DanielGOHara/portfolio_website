@@ -21,7 +21,7 @@ export default class InfoSection extends React.Component {
 
   componentDidMount() {
     this.timer();
-  }
+  } 
 
   timer() {
     setInterval(() => this.checkSelection(), 5);
