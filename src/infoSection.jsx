@@ -60,8 +60,8 @@ export default class InfoSection extends React.Component {
 
   render() {
     return (
-      <section id="infoSection">
-        <div id="currentSection"><this.state.CurrentSection/></div>
+      <section >
+        <div class="currentSection"><this.state.CurrentSection/></div>
       </section>
     );
   }
