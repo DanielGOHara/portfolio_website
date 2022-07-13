@@ -12,19 +12,22 @@ export default class Navbar extends React.Component {
     render() {
         return (
         <nav id="navBar">
-            <section id="logoStatementContainer">
-                <img id="pageLogo" alt ="Logo" src={Logo} height="75px" width="75px"/>
-                <span id="pageStatement">Site Developed By Me.</span>
+            <section id="buttonContainer">
+                <section id="logoStatementContainer">
+                    <img id="pageLogo" alt ="Logo" src={Logo} height="75px" width="75px"/>
+                    <span id="pageStatement">Site Developed By Me.</span>
+                </section>
+                <Home/>
+                <Line/>
+                <Projects/>
+                <Line/>
+                <Skills/>
+                <Line/>
+                <About/>
+                <Line/>
+                <Contact/>
             </section>
-            <Home/>
-            <Line/>
-            <Projects/>
-            <Line/>
-            <Skills/>
-            <Line/>
-            <About/>
-            <Line/>
-            <Contact/>
+            <span id="navBarSpacer"></span>
         </nav>
         );
     }

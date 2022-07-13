@@ -4,7 +4,7 @@ import { setInfo } from "../../infoSection.jsx";
 
 export default function Home() {
     return (
-        <section className="buttonContainer">
+        <section className="button">
             <div className="btn pageButton" role="button" onClick={() => setInfo("home")}>
                 <span className="buttonName" class="text">Home</span>
             </div>

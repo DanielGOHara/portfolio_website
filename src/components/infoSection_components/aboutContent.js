@@ -3,8 +3,8 @@ import React from "react";
 
 export default function AboutContents() {
     return (
-        <span className="contents">
+        <section className="contents">
             About Contents...
-        </span>
+        </section>
     );
 }

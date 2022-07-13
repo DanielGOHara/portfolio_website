@@ -3,8 +3,8 @@ import React from "react";
 
 export default function ProjectsContents() {
     return (
-        <span className="contents">
+        <section className="contents">
             Projects Contents...
-        </span>
+        </section>
     );
 }

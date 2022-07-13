@@ -3,8 +3,8 @@ import React from "react";
 
 export default function ContactContents() {
     return (
-        <span className="contents">
+        <section className="contents">
             Contact Contents...
-        </span>
+        </section>
     );
 }
